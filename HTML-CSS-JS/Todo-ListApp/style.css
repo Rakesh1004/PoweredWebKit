@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg,green,blue);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header , form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.7rem;
+    border: none;
+    background-color: white;
+    padding: 0.5rem;
+}
+form input{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+form button{
+    color: rgb(19, 179, 243);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+form button:hover{
+    color: white;
+    background-color: rgb(21, 175, 236);
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.todo li{
+    flex: 1;
+    padding-left: 30px;
+}
+.check-button,.trash-button{
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(8, 206, 8);
+    padding: 0.9rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.trash-button{
+    background-color: red;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.check-button:hover{
+    color: green;
+    background-color: white;
+}
+.trash-button:hover{
+    background-color: white;
+    color: red;
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.Completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
