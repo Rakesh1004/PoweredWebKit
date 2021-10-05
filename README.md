@@ -1,6 +1,6 @@
 # PoweredWebKit
 
-This repo is open for all. Add your favourite DSA &competitive programming questions along with the solution.
+A collection of web-powering applications that contains codes to web applications to encourage beginner developers to start web development, anyone with a will to brew some code can contribute here...  
 
 ## Guidelines
 
@@ -41,4 +41,4 @@ git push
 - Your PR gets merged!
 - Now you can also help others do the same.
 
-# Happy Coding!
+## Voila
