@@ -1,0 +1,25 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "A basic discord bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Shubham Shantam Raju",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.10",
+    "mongoose": "^5.13.4",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
