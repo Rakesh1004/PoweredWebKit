@@ -1,0 +1,133 @@
+/* .sectionheader-addto{
+    display:grid;
+    grid-template-columns:1fr 3fr 2fr 2fr;
+    background-color: black;
+    margin-bottom:20px;
+    color:white;
+    align-items:end;
+    font-size: 1.2rem;
+    margin:10px;
+} */
+
+.sectionheader-addto{
+    display:grid;
+    grid-template-columns: 2fr 4fr 2.4fr 2.4Fr 1.5fr;
+    width:100%;
+    background-color: black;
+    color:white;
+    align-items:center;font-size:1.2rem;
+    height:5vh;
+   
+}
+
+
+
+
+.addto-search-box{
+    height:60px ;width:100%;
+    display:grid;
+    grid-template-columns:0.4fr 3.4fr 3fr 2.3fr ;
+    grid-gap:20px;
+    color:white;
+    align-items:center;
+    font-size: 0.8rem;
+}
+.span{
+    cursor: pointer;
+    align-items: center;
+}
+
+/* 
+.addingSongsto span{
+
+    height:10vh; 
+    align-items: center;
+    color:white;
+
+    /* width:3rem;
+    height:2rem; */
+    /* } */ */
+    /* .addingSongsto span:hover{
+        background-color: rgba(34, 30, 30, 0.726);
+         /* width:3rem; */
+        
+        /* } */ */
+        .display-existing-playlists{
+            background-color: rgba(34, 30, 30, 0.726);
+        }
+        .display-existing-playlists:hover{
+            background-color: black;
+           color:red;
+        }
+    .delete-icon{
+    margin-top:4vh;
+    }
+
+    .add-songs-playlist-button{
+        background-color: black;
+        margin:0;
+        padding:0;
+        border:0;
+        color:white;
+      width:100%;
+    }
+    .add-songs-playlist-button:hover{
+        background-color: black;
+        color:red;
+    }
+
+    .sectionheader-my-playlist-songs{
+        display:grid;
+        grid-template-columns: 2fr 4fr 2.4fr 2.4Fr 1.5fr;
+    width:80vh;
+        background-color: black;
+        color:white;
+        align-items:center;font-size:1.2rem;
+        height:5vh;
+        position:absolute;
+        top:55vh;
+        border-top:5px solid white;
+    }
+    .addto-search-box:hover{
+        cursor: pointer;
+        color:red;
+    }
+    .addicon{
+        background-color:rgba(34, 30, 30, 0.726);
+        fill:white;
+        align-items: center;
+        margin:50% 0;
+        width:2rem;
+    }
+    .addicon:hover{
+        color:red;
+        cursor:pointer;
+    }
+
+@media screen and (max-width:500px) {
+    .sectionheader-addto{
+        display:grid;
+        grid-template-columns: 3fr 3.5fr 3.5fr 2Fr 1.5fr;
+        width:100%;
+        background-color: black;
+        
+        color:white;
+        align-items:center;font-size:0.8rem;
+        height:4vh;
+       
+    }
+
+    .addto-search-box{
+        height:60px ;width:100%;
+        display:grid;
+        grid-template-columns:  0.4fr  2fr 3.4fr 3fr ;
+        grid-gap:20px;
+     
+        align-items:center;
+        font-size: 0.5rem;
+    }
+    
+    .addto-search-box img{
+        width:100%;
+    }
+}

@@ -1,0 +1,102 @@
+.playlist-area{
+    background-color: rgb(14, 14, 14);
+
+    height:91vh;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+
+.playlist-area::-webkit-scrollbar {
+    display: none;
+  }
+.playlistsong{
+    /* height:10vh; */
+
+    width:100%;
+
+    grid-gap:10px;
+    align-items:center;
+    color:white;
+    height:9vh;
+    margin:0 10px;
+}
+
+.playlistsong img{width:100%;}
+.playlistsong:hover{
+    background-color: rgba(128, 128, 128, 0.301);
+
+cursor: pointer;
+}
+.playlist-banner{
+    background-image:url('playlistnew.jpg');
+    /* background-position-x:-15px; */
+    background-position-y:-365px;
+    background-repeat: no-repeat;
+    height:45vh;
+    background-size: cover;
+     margin:0 5px; 
+     opacity:0.8;
+}
+.sectionheader{
+    display:grid;
+    grid-template-columns: 2fr 4fr 2.4fr 2.4Fr 1.5fr;
+    width:100%;
+    background-color: black;
+    color:white;
+    align-items:center;font-size:1.2rem;
+    height:5vh;
+    
+}
+
+
+.loader-playlist{
+    position:absolute;
+    margin-left: 35vw;
+    margin-top:48vh;
+  }
+.delete-icon:hover{
+    fill:red;
+}
+@media screen and (max-width:500px){
+    .playlist-banner{
+        width: 54vh;
+            background-image:url('playlistnew.jpg');
+            background-position-y: 0px;
+            background-position-x: -85px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 5px;
+            opacity: 0.8;
+    }
+
+    .loader{
+        position:absolute;
+        margin-right:-10%;
+        margin-top:0%;
+    }
+  
+    .playlistsong{
+        width:100%;
+        display:grid;
+        grid-template-columns: 0 0.8fr  3fr 2.5fr 2.5fr 1fr ;
+        grid-gap:10px;
+        align-items:center;
+        font-size: 0.5rem;
+        height:14vh;
+        margin-right:10px;
+
+    }
+ 
+    .sectionheader{
+        display:grid;
+       background-color:black;
+        grid-template-columns:1.5fr 3.5fr 3fr 3fr 1.5fr ;
+        width:100%;
+     
+        color:white;
+        align-items:end;
+        font-size:0.7rem;
+    }
+  
+}
