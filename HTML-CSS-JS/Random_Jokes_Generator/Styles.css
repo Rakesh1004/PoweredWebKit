@@ -1,0 +1,81 @@
+ body{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    overflow: hidden;
+    justify-content: center;
+     padding-right: 30px;
+     font-family: 'Neucha', cursive;
+}
+.wrapper{
+    height: 100vh;
+    width: 55vw;
+}
+.P{
+    font-style: italic;
+ color:royalblue;
+ border-radius: 10px;
+ width: 50%;
+ padding-left: 35px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ padding-right: 10px;
+}
+.P:hover{
+    background-color: lime;
+    transform: scale(1.05);
+    transition-duration: 0.8s;
+}
+.title{
+    font-size: larger;
+    font-style: oblique;
+    color:orangered;
+    padding-left: 40px;
+    border-radius: 10px;
+    width: 50vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.title:hover{
+    background-color: gold;
+    transform: scale(1.005);
+    transition-duration: 0.8s;
+}
+.button{
+    background-color: red;
+    border-radius: 12px;
+    height: 4.5vh;
+    width: 10vh;box-shadow: 1px 1px 10px greenyellow;
+    justify-content: baseline;
+    align-items: flex-end;
+}
+.button:hover{
+    background-color: blue;
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+.full{
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.count{
+    height: 100vh;
+    width: 45vw;
+}
+.C{
+    font-style: italic;
+    color: deeppink;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    
+}
+.C:hover{
+    transform: scale(1.01);
+    transition-duration: 0.8s;
+    background-color: blue;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'layouts/page.html' %}
+
+    {% block content %}
+    <div class="page new-question-page">
+    <h2 class="title">New question</h2>
+
+
+    <form method="POST" action="" class="new-question-form">
+      {% csrf_token %}
+    <div class="fieldWrapper">
+      <label for="{{form.title.id_for_label}}">Title:</label>
+      {{form.title}}
+      <span class="error">{{form.title.errors}}</span>
+    </div>
+    <div class="fieldWrapper">
+       <label for="{{form.body.id_for_label}}">Body:</label>
+       {{form.body}}
+       <span class="error">{{form.body.errors}}</span>
+    </div>
+    <input type="submit" value="Submit" class="submit-button"/>
+    </form>
+
+    </div>
+    {% endblock %}
+
+
+</body>
+</html>
