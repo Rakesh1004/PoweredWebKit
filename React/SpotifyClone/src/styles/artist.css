@@ -1,0 +1,41 @@
+
+  .sectionheader-artist{
+    display:grid;
+   
+    grid-template-columns:60px 80px 80px 60px 70px;
+    width:100%;
+    background-color: rgba(34, 30, 30, 0.726);
+    color:white;
+    align-items:end;
+    font-size:0.7rem;
+}
+
+.artist-banner{
+  background-image:url('dj.jpg');
+  /* background-position-x:-15px; */
+  background-position-y:-265px;
+  background-repeat: no-repeat;
+  height:58vh;
+  background-size: cover;
+   margin:0 5px; 
+   opacity:0.8;
+}
+#loader-artist{
+ 
+    position:absolute;
+    top:30%;
+    right:50%;
+
+}
+@media screen and (max-width:500px){
+  .artist-banner{
+      width: 54vh;
+          /* background-image:url('dj.jpg'); */
+          background-position-y: 0px;
+          background-position-x: -85px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0 5px;
+          opacity: 0.8;
+  }
+}

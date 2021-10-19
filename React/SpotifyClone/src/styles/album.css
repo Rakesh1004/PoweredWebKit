@@ -1,0 +1,68 @@
+.albumsong{
+
+    width:100%;
+    align-items:center;
+    height:10vh;
+}
+.albumsong:hover{
+    color:red;
+    cursor: pointer;
+    background-color: black;
+}
+.sectionheader-album{
+    display:grid;
+    grid-template-columns: 80px 3.8fr 2fr 2fr ;
+    width:100%;
+    background-color: black;
+    color:white;
+    align-items:end;
+   height:5vh;
+   align-items: center;
+}
+.album-banner{
+    background-image:url('liked3.jpg');
+    /* background-position-x:-15px; */
+    background-position-y:-85px;
+    background-repeat: no-repeat;
+    height:56vh;
+    background-size: cover;
+     margin:0 5px; 
+     opacity:0.8;
+}
+@media screen and (max-width:500px) {
+    .sectionheader-album{
+        display:grid;
+        grid-template-columns: 20px 3.8fr 2.2fr 2.2fr ;
+        width:100%;
+        background-color: black;
+        color:white;
+        align-items:end;
+       height:5vh;
+       align-items: center;
+       font-size:0.8rem
+    }
+
+    .albumsong{
+
+        background-color: rgba(34, 30, 30, 0.726);
+        width:100%;
+        display:grid;
+        grid-template-columns:20px 4fr 2.3fr 2.3fr ;
+        grid-gap:10px;
+        align-items:center;
+        color:white;
+        height:10vh;
+        font-size:0.7rem;
+    }
+
+    .album-banner{
+        width: 54vh;
+            background-image:url('liked3.jpg');
+            background-position-y: 0px;
+            background-position-x: -85px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 5px;
+            opacity: 0.8;
+    }
+}

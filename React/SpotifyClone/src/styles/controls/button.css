@@ -1,0 +1,48 @@
+.btn-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 46px;
+  height: 44px;
+  flex-grow: 1;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin: 1.2% 48%;
+  z-index: 3;
+
+}
+.btn-play {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 15px 23px;
+  border-color: transparent transparent transparent black;
+  cursor: pointer;
+  margin-left:30%;
+  margin-top: 8px;
+}
+
+.btn-stop {
+  height: 25px;
+  width: 5px;
+  border-left: 6px solid rgb(0, 0, 0);
+  border-right: 6px solid rgb(0, 0, 0);
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 15px;
+
+}
+
+@media screen and (max-width:500px){
+  .btn-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* width: 20px;
+    height: 20px; */
+    /* flex-grow: 1; */
+   position:absolute;
+   margin:4% 45%;
+  }
+}

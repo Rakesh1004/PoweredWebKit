@@ -1,0 +1,240 @@
+
+
+.middle-create-playlist{
+    background: hsla(0, 2%, 11%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1c1b1b", endColorstr="#625e6d", GradientType=1 );
+    height:91vh;
+    width:100%;
+    overflow-y: scroll;
+    display:grid;
+    grid-template-rows:45vh;
+}
+
+.middle-create-playlist-blur{
+    background: hsla(0, 2%, 11%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1c1b1b", endColorstr="#625e6d", GradientType=1 );
+    height:91vh;
+    width:100%;
+    overflow-y: scroll;
+    display:grid;
+    grid-template-rows:45vh;
+/* 
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px); */
+}
+
+
+.middle-create-playlist h1{
+    margin:30px 30px;
+    font-size:3.5rem;
+    color:white;
+}
+
+.banner-box-create-playlist{
+
+
+    background: hsla(0, 1%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(0, 1%, 45%, 1) 0%, hsla(0, 0%, 12%, 1) 90%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 1%, 45%, 1) 0%, hsla(0, 0%, 12%, 1) 90%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 1%, 45%, 1) 0%, hsla(0, 0%, 12%, 1) 90%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#747272", endColorstr="#1F1F1F", GradientType=1 );
+height:65%;
+width:20%;
+margin-top:5%;
+margin-left:5%;
+
+}
+
+.middle-create-playlist::-webkit-scrollbar {
+    display: none;
+  }
+.add-new-playlist{
+    width:35vh;
+    height:35vh;
+    background-color: rgb(0, 0, 0);
+    margin:0 30px;
+    opacity:0.7;
+   position:absolute;
+ top:150px;
+ border:1px dashed rgba(255, 0, 0, 0.678);
+}
+
+
+.plus{
+    margin:10% 20%;
+}
+.create-playlist-form button{
+    background-color: rgba(0, 0, 0, 0.89);
+    font-size:1.2rem;
+    height:3rem;
+    width:15rem;
+    display:block;
+    position:absolute;
+    cursor:pointer;
+    /* margin:200px 150px; */
+    margin:200px 50px;
+    border-radius:10px;
+    color:white;
+}
+.add-new-playlist:hover{
+    width:36vh;
+    height:36vh;
+    background-color: rgb(0, 0, 0);
+    /* margin:30px 30px; */
+    opacity:1.0;
+    cursor:pointer;
+}
+.display-new-playlist{
+    width:40vh;
+    height:40vh;
+    background-color: rgb(0, 0, 0);
+    margin:30px 30px;
+    opacity:0.4;
+}
+
+/* .playlist-creation-grid{
+display:grid;
+grid-template-columns: 1fr 1fr;
+height:100vh;
+width:100%;
+} */
+#playlist-bar{
+    margin:30px 40px;
+    position:absolute;
+    width:20rem;
+    background-color: black;
+    font-size:1.2rem;
+    height:3rem;
+    margin:100px 50px;
+    border-radius:10px;
+ color:white;
+}
+.poppup{
+    height:52vh;
+    width:50vw;
+    /* margin:auto; */
+    background: hsla(0, 2%, 11%, 1);
+
+    background: linear-gradient(270deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -moz-linear-gradient(270deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -webkit-linear-gradient(270deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1c1b1b", endColorstr="#625e6d", GradientType=1 );
+   opacity:1.2;
+   z-index:999;
+   position:absolute;
+   top:18vh;
+   margin-left:15%;
+   border-radius:10px;
+   overflow-y: hidden;
+}
+
+
+
+.close-icon{
+    fill:white;
+
+border:0;
+color:white;
+background-color:black;
+cursor:pointer;
+}
+.close-icon:hover{
+    cursor:pointer;
+}
+@media screen and (max-width:500px) {
+    .add-new-playlist{
+        width:40vh;
+        height:40vh;
+        background-color: rgb(0, 0, 0);
+        margin:0 50px;
+        opacity:0.7;
+       position:absolute;
+     top:150px;
+    }
+    
+    .plus{
+        margin:30px 30px;
+    }
+    
+
+    .middle-create-playlist h1{
+        margin:30px 30px;
+        font-size:2rem;
+        text-align:center;
+        color:white;
+    }
+    
+    .Createplaylist{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height:100vh;
+        width:499px;
+    }
+    .middle-create-playlist{
+        background-color:#212121;
+        height:87vh;
+        width:100%;
+        overflow-y: hidden;
+    }
+    
+    .poppup{
+        height:470px;
+        width:100%;
+        margin:auto;
+        background-color: #2a2a72;
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+       opacity:1.2;
+       z-index:3;
+       position:relative;
+       border-radius:10px;
+       position:absolute;
+   top:18vh;
+    }
+   
+    #playlist-bar{
+        margin:60px 40px;
+        position:absolute;
+        width:18rem;
+        display:block;
+        background-color: black;
+        font-size:1.2rem;
+        height:3rem;
+        color:white;
+    }
+    .create-playlist-form button{
+        background-color: black;
+        font-size:1.2rem;
+        height:3rem;
+        width:15rem;
+        display:block;
+        position:absolute;
+        cursor:pointer;
+        margin:150px 70px;
+        border-radius:10px;
+        color:white;
+    }
+}

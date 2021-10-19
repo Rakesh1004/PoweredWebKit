@@ -1,0 +1,120 @@
+
+.my-playlists-middle{
+    width:100%;
+    height:91vh;
+    background: hsla(0, 2%, 11%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 2%, 11%, 1) 40%, hsla(256, 7%, 40%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1c1b1b", endColorstr="#625e6d", GradientType=1 );
+    overflow-y: scroll;
+    display:grid;
+    grid-template-rows: 53vh;
+}
+
+.my-playlists-header-box{
+
+
+    background: hsla(0, 1%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(0, 1%, 45%, 1) 0%, hsla(0, 0%, 12%, 1) 90%);
+
+background: -moz-linear-gradient(90deg, hsla(0, 1%, 45%, 1) 0%, hsla(0, 0%, 12%, 1) 90%);
+
+background: -webkit-linear-gradient(90deg, hsla(0, 1%, 45%, 1) 0%, hsla(0, 0%, 12%, 1) 90%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#747272", endColorstr="#1F1F1F", GradientType=1 );
+height:65%;
+width:20%;
+margin-top:5%;
+margin-left:5%;
+
+}
+
+.my-playlists-middle-boxes{
+  
+    display:grid;
+   
+    grid-template-columns:repeat(5,20%);
+   
+} 
+
+.my-playlists-middle::-webkit-scrollbar {
+    display: none;
+  }
+
+/* .my-playlists-middle button{
+    background-color:black;
+    color:white;
+    height:3rem;
+    display:block;
+    width:12rem;
+} */
+
+
+
+.my-playlist-box-container{
+    margin:5px ;
+}
+
+
+
+/* .my-playlist-box{
+    height:30vh;
+    width:30vh;
+    background-color: black;
+    color:white;
+    margin:30px 30px;
+    color:white;
+} */
+/* 
+.my-playlist-box button{
+    height:30vh;
+    width:30vh;
+    background-color: #121212;
+    color:white;
+    margin:30px 30px;
+    color:white;
+} */
+
+
+.my-playlist-box a{
+    text-decoration:none;
+    color:white;
+}
+
+.delete-my-playlist:hover{
+cursor: pointer;
+}
+
+
+
+@media screen  and (max-width:500px){
+    /* .my-playlist-box{
+        height:10vh;
+        width:10vh;
+        background-color: black;
+        color:white;
+        margin:30px 30px;
+        color:white;
+    } */
+
+
+
+    .my-playlists-middle{
+        width:100%;
+        height:87vh;
+        background-color: #121212;
+        display:grid;
+        grid-template-columns:30vh;
+        grid-template-rows:repeat(4,1fr);
+        overflow-y: scroll;
+    } 
+
+
+
+}
