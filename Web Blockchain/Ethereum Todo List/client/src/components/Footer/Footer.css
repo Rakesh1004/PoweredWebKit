@@ -1,0 +1,14 @@
+.footer{
+    height:30vh;
+    width:100%;
+    background-color: black;
+    display: flex;
+}
+.message{
+    margin:auto;
+    color:white;
+    font-size: clamp(2rem,2.2rem,3rem);
+    text-align: center;
+    justify-content: center;
+    
+}

@@ -1,0 +1,130 @@
+.notes-section{
+    display:flex;
+    flex-wrap:wrap;
+    height:calc(100vh - 80px);
+    width:100vw;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.pending{
+ width:50%;
+}
+
+
+.creation{
+margin-left:20px;
+}
+.creation>h1,.your-notes>h1{
+    font-size: clamp(1rem,6vw,3rem);
+    font-weight:600;
+}
+
+.form-bar{
+    overflow: auto;
+    outline:0;
+    border:5px solid black;
+    height:clamp(0.9rem,4vw,2.5rem);
+    width:clamp(190px,80%,1100px);
+    font-size:clamp(0.8rem,2vw,2.4rem)
+}
+
+.notes-submit{
+    margin-top:40px;
+    background-color: black;
+    color:white;
+    border-radius:4px;
+    transition: 400ms;
+    height:30px;
+    width:60px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+
+.notes-submit:hover{
+    background-color: white;
+    color:black;
+}
+
+
+
+
+
+.your-notes{
+    margin-left:20px;
+    margin-top:100px;
+
+}
+
+.display-notes{
+    height:max-content;
+    width:100%;
+}
+
+.note{
+    padding-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight:400;
+    font-size: clamp(0.7rem,1.5vw,3rem);
+    height:fit-content;
+}
+
+.checkbox{
+    height:30px;
+    width:30px;
+    cursor:pointer;
+}
+
+
+
+
+.completed{
+  background-color: black;
+  width:50%;
+}
+
+.completed-notes-inner{
+    margin-left:20px;
+}
+.completed-notes-inner>h1{
+     font-size: clamp(1rem,6vw,3rem);
+    font-weight:600;
+    color:white;
+}
+
+.completed-notes-display{
+    font-size: clamp(0.7rem,1.5vw,3rem);
+    text-decoration: line-through;
+    color:white
+}
+
+
+
+
+
+
+@media screen  and (max-width:768px){
+    .notes-section{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    height:calc(100vh - 80px);
+    width:100vw;
+}
+.completed{
+  background-color: black;
+  width:100%;
+  min-height:50%;
+  height: auto;
+}
+
+.pending{
+ width:100%;
+  min-height:50%;
+  height: auto;
+}
+
+}
