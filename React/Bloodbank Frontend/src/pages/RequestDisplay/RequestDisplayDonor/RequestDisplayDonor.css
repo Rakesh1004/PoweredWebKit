@@ -1,0 +1,47 @@
+
+.Donor{
+    background-color: #EE010D;
+}
+.single-request-display-receiver{
+    background-color: #EE010D;
+    display:flex;
+    flex-direction: row;
+    width:100vw;
+    height:90.2vh;
+
+}
+
+.display-right{
+  background-color: #EE010D;
+    width:50vw;
+    height:100%;
+        margin-top: -10px;
+
+}
+.display-left{
+    width:50%;
+    height:100%;
+}
+
+.icons{
+    display:flex;
+    flex-direction:row;
+    position: absolute;
+    right:5%;
+}
+.display-request-details{
+    color:white;
+    margin-top:100px;
+    padding-right:100px;
+}
+.btn {
+    background-color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    color:white;
+    cursor: pointer;
+    transition: 400ms;
+    border:none;
+}

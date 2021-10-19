@@ -1,0 +1,122 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+.nav {
+  padding: 0 80px;
+  height: 96px;
+  width: 100%;
+  background-color: #f90941;
+
+  position: relative;
+}
+
+.nav > .nav-header {
+  font-family: "Lobster", cursive;
+
+  font-weight: 700;
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  cursor: pointer;
+  margin: 20px;
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  transition: 400ms;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  margin: 20px;
+  display: inline;
+  float: right;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav > .nav-links > a {
+  transition: 400ms;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  transition: 600ms;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 928px) {
+  .nav > .nav-btn {
+    margin: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #f90941;
+
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    /* top: 50px; */
+    left: -20px;
+  }
+  .nav > .nav-links > a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .nav > .nav-links > a:hover {
+    background-color: #f90941;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    z-index: 999;
+    /* height: calc(100vh - 100px); */
+    overflow-y: auto;
+  }
+}
