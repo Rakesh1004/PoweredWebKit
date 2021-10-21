@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glug</title>
+</head>
+<body>
+    <h1>Welcome to Q&A with Glug</h1>
+    {% extends 'layouts/page.html' %}
+
+    {% block content %}
+    <div class="page">
+        <h2 class="title">All Questions</h2>
+    {% for question in questions %}
+    <div class="question-list-item">
+        <a href="{% url 'question' question.id %}">
+            <p class="question-list-item-title">
+                {{question.title}}
+
+            </p>
+            <p class="question-list-item-author">
+               By {{question.author.username}}
+            
+            </p>
+
+        </a>
+
+    </div>
+    {% endfor %}
+    </div>
+    {% endblock %} 
+
+</body>
+</html>
