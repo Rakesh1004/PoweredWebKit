@@ -1,0 +1,189 @@
+/* Basic  */
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.3;
+
+}
+/* Header */
+.header__main {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header__text {
+    font-family: 'Comfortaa', cursive;
+
+    color: #ffffff;
+    
+}
+.nav {
+    display: flex;
+    justify-self: right;
+    align-self: center;
+    margin-right: 2rem;
+}
+
+.header__options {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.content {
+background-image: linear-gradient(to right bottom, rgba(144, 55, 73, 0.701), rgba(226, 62, 87, 0.701)), url(../images/stanlee.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+height:100vh;
+width: 100%;
+ 
+} 
+.logo {
+    height: 2.4rem;
+}
+.des {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+    padding-top: 5rem;
+}
+
+.main-text {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 5.4rem;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #eeeeee;
+}
+/* Helper Class */
+
+.u-margin-left-large {
+margin-left: 5rem;
+}
+
+.interact {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    padding: 6rem 15rem 0;
+}
+.contact {
+    fill: #262626;
+    background-color: #ffffff;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    
+}
+.class,
+.class:visited,
+.class:link {
+   color: #eeeeee;
+}
+
+h4 {
+    margin-top: 4px;
+    text-align: center;
+    color: #eeeeee;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+
+}
+.main {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+.one {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.two {
+    justify-content: right;
+    justify-self: right;
+
+}
+.email {
+    height: 2rem;
+    width: 2rem;
+    fill: #fff;
+    margin: 0 1rem;
+}
+.abcd{
+    height: 4rem;
+
+}
+.nitd{
+    height: 4rem;
+}
+.nbarsettings{
+    padding: 1.5%;
+    height: 8rem;
+}
+.fontsett1{
+    
+    font-family:'Comfortaa', cursive ;
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+.fontsett2{
+    font-family:'Comfortaa', cursive ;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.header__text{
+      margin-top: 100px;
+      width: 50%;
+}
+.bgimage{
+    background-image: linear-gradient(to right bottom, rgba(144, 55, 73, 0.701), rgba(226, 62, 87, 0.701)), url(../images/stanlee.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+height:100vh;
+width: 100%;
+}
+.bottomsettings{
+    padding: 1.5%;
+    height: 6rem;
+}
+.hamburgIcon{
+    width: 50px;
+    height: 45px;
+}
+.icon-bar{
+
+}

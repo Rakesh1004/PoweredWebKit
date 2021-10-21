@@ -1,0 +1,161 @@
+.liked-area{
+    background: hsla(0, 8%, 5%, 1);
+    background: linear-gradient(90deg, #070606 40%, hsla(254, 52%, 47%, 1) 100%); 
+    background: -moz-linear-gradient(90deg, #070606 40%, hsla(254, 52%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, #070606 40%, hsla(254, 52%, 47%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E0C0C", endColorstr="#5639B5", GradientType=1 );
+    display:grid;
+    grid-template-rows:48vh 5vh;
+    width:100%;
+    overflow-y: scroll;
+    height:91vh;
+    overflow-x: hidden;
+}
+
+.banner-box{height:65%;
+width:20%;
+background: hsla(268, 64%, 61%, 1);
+
+background: linear-gradient(110deg, hsla(268, 64%, 61%, 0.9) 41%, hsla(254, 80%, 53%, 1) 100%);
+
+background: -moz-linear-gradient(110deg, hsla(268, 64%, 61%, 0.9) 41%, hsla(254, 80%, 53%, 1) 100%);
+
+background: -webkit-linear-gradient(110deg, hsla(268, 64%, 61%, 0.9) 41%, hsla(254, 80%, 53%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#985DDC", endColorstr="#5326E7", GradientType=1 );
+
+margin-top:5%;
+margin-left:5%;
+
+;}
+
+
+
+
+
+.banner-box-icon{
+
+ color:white;
+ height:60px;
+ width:100px;
+ margin-left:20%;
+ margin-top:30%;
+
+}
+
+
+.liked-area::-webkit-scrollbar {
+    display: none;
+  }
+
+.likedsong{
+    height:9vh;
+    align-items:center;
+    color:grey
+}
+
+
+.likedsong:hover{
+    background-color: rgba(128, 128, 128, 0.301);
+    cursor:pointer;
+    color:white
+}
+
+.likedsong img{
+height:40px;
+
+}
+
+.entire-liked-song-container{
+    display:flex;
+    flex-direction:horizontal;
+    justify-content: space-between;
+    align-items: center;
+}
+.entire-liked-song-container span{
+    border:0;
+    height:20px;
+    margin-right:20px;
+    color:rgba(255, 0, 0, 0.678);
+}
+
+.liked-section-header{
+    align-items:center;
+  justify-content:left;
+    border-bottom: solid 0.5px rgba(255, 255, 255, 0.123);
+    
+}
+
+
+
+.minus:hover{
+    color:white;
+}
+
+
+.like-flex{align-items: center;
+    /* background-color: rgba(34, 30, 30, 0.726); */
+    justify-content:space-between;
+}
+
+
+@media screen and (max-width:500px){
+
+    .banner-box{height:55%;
+        width:40%;
+        background: hsla(268, 64%, 61%, 1);
+        
+        background: linear-gradient(110deg, hsla(268, 64%, 61%, 0.9) 41%, hsla(254, 80%, 53%, 1) 100%);
+        
+        background: -moz-linear-gradient(110deg, hsla(268, 64%, 61%, 0.9) 41%, hsla(254, 80%, 53%, 1) 100%);
+        
+        background: -webkit-linear-gradient(110deg, hsla(268, 64%, 61%, 0.9) 41%, hsla(254, 80%, 53%, 1) 100%);
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#985DDC", endColorstr="#5326E7", GradientType=1 );
+        
+        margin-top:20%;
+        margin-left:5%;
+        
+        ;}
+
+
+        /* .banner-box-icon{
+
+            color:white;
+            height:40px;
+            width:60px;
+            margin-left:10%;
+            margin-top:20%;
+           
+           } */
+
+
+   .likedsong{
+       height:14vh;
+   }
+    .liked-area{
+        background-color: rgb(14, 14, 14);
+        display:grid;
+        grid-template-rows:40vh;
+        overflow-y: scroll;
+        height:87vh;
+    }
+
+
+    .liked-banner{ width: 68vh;
+        background: hsla(0, 0%, 9%, 1);
+
+        background: linear-gradient(360deg, hsla(0, 0%, 9%, 1) 40%, hsla(267, 95%, 38%, 0.9) 55%);
+        
+        background: -moz-linear-gradient(360deg, hsla(0, 0%, 9%, 1) 40%, hsla(267, 95%, 38%, 0.9) 55%);
+        
+        background: -webkit-linear-gradient(360deg, hsla(0, 0%, 9%, 1) 40%, hsla(267, 95%, 38%, 0.9) 55%);
+        
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#181818", endColorstr="#5805BD", GradientType=1 );
+            background-size: cover;
+            margin: 0 5px;
+            opacity: 0.8;
+    }
+
+
+}

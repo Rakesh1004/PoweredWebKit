@@ -1,0 +1,57 @@
+.details {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #880808; */
+}
+
+.user-details-form {
+  margin: auto;
+  width: 600px;
+  padding-top: 125px;
+  /* height:800px; */
+  align-items: center;
+  justify-content: center;
+  /* background-color: crimson; */
+}
+
+.user-details-form-inner {
+  border-radius: 10px;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.09);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detail-field {
+  margin: auto;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.icon-navigation {
+  cursor: pointer;
+}
+
+.submit-button-details {
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #880808;
+  transition: 400ms;
+}
+
+.submit-button-details:hover {
+  background-color: #880808;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 30px;
+  width: fit-content;
+  margin: auto;
+}

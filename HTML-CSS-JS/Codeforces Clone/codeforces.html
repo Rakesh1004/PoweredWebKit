@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Codeforces website</title>
+    <link rel="stylesheet" href="css/main.css">
+   
+    <script src="./info.js" ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+           
+            <a class="logo" href="#">HOME</a>
+            <img id="mobile-cta" class="mobile-menu" src="Images/icons8-menu-24.png" alt="Open Navigation"> 
+
+            
+            <nav>
+              <img id="mobile-exit" class="mobile-menu-exit" src="Images/exit.svg" alt="Close Navigation">
+                
+                
+                <ul class="primary-nav">
+                    
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Contests</a></li>
+                    <li><a href="#">Rating</a></li>
+                    <li><a href="#">Help</a></li>
+                  
+
+                <ul class="secondary-nav">
+                    
+                    <li class="register"><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                
+                <h1>WELCOME TO CODE<span>FORCES</span></h1>
+                <img src="Images/codeforces-svgrepo-com.svg" class= "codeforces" alt= "">
+                <p class="subhead">Compete against the best, Be the best.</p>
+
+                <div class="hero-cta">
+                    
+                    
+                        <img src="Images/coding1.jpg" class= "programmer" alt="">
+                   
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class= "Languages">
+        <div class="container">
+            <h2><u>CODE WITH ANY LANGUAGE</u></h2>
+            <ul class="list">
+                <li class="list-item">
+                  <div class="languagename">
+                    c
+                  </div>
+                  <div class="languageimg">
+                    <img src="Images/icons8-c-programming-48.png" class="lang-img">
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="languagename">
+                    c++
+                  </div>
+                  <div class="languageimg">
+                    <img src="Images/icons8-c++-50.png" class="lang-img">
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="languagename">
+                    JAVA
+                  </div>
+                  <div class="languageimg">
+                    <img src="Images/58480979cef1014c0b5e4901.png" class="lang-img">
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="languagename">
+                    PYTHON
+                  </div>
+                  <div class="languageimg">
+                    <img src="Images/icons8-python-file-50.png" class="lang-img">
+                  </div>
+                </li>
+              </ul>
+              <div class="codingimg">
+                <img src= "Images/computers.svg" class= "coding-img">
+              </div>              
+
+           
+        </div>
+    </section>
+
+    <section class="contests">
+        <div class="container">
+            <h2>Upcoming Contests</h2>
+            <ul class="contests-list">
+                <li><a href="#" class= "contest1"> Codeforces Round #891</a> </li>
+                <li><a href="#" class= "contest2"> Codeforces Round #892</a> </li>
+                
+            </ul>
+
+            
+        </div>
+    </section>
+
+
+
+   
+    <div class="main-container">
+      <p class= "login"> LOGIN By entering your user handle :- </p>
+      <div class="search-container">
+        <input
+          type="text"
+          name="Username"
+          id="input"
+          class="input"
+          placeholder="Your Codeforces handle"
+        />
+        <button id="search" class="search" onclick="getDETAILS(); myFunction();">Search</button>
+      </div>
+      <div class="profile" id= "profile">
+        <div class="img-name">
+          <img
+            src="Images/profile.png"
+            alt=""
+            id="img"
+            class="img"
+          /><br />
+          <span class="name" id="name">Name</span><br />
+         
+        </div>
+        <div class="country" id="country">Country</div>
+        
+        <div class="City" id="City">City</div>
+        <div class="organisation" id="organisation">Organization</div>
+        <div class="other">
+          <a id="rank"><span id="rank">00</span>Rank</a>
+          <a id="rating"><span id="rating">00</span>Rating</a>
+        </div>
+      </div>
+      
+      </div>
+     <div id="error" class="error"></div>
+
+     <br> <br> <br>
+
+      <div class="contestsfetch">
+
+        <p class= "prevcont">PREVIOUS CONTESTS</p>
+       
+        <div class="dets">
+          <br>
+          <span>Contest Name - </span><span id="cname" class="bolds"> 0000</span> <br>
+          <span>Contest Duration - </span><span id="cdura" class="bolds"> 0000</span> <br>
+          <span>Contest Difficultry - </span><span id="cdiff" class="bolds"> 0000</span> <br>
+          <span>Contest ID - </span><span id="cid" class="bolds"> 0000</span> <br>
+        </div>
+        <br>
+        <button id="indC" class="search">Contest 0000</button>
+
+        <div class="dets2">
+          <br>
+          <span>Contest Name - </span><span id="cname2" class="bolds2"> 0000</span> <br>
+          <span>Contest Duration - </span><span id="cdura2" class="bolds2"> 0000</span> <br>
+          <span>Contest Difficultry - </span><span id="cdiff2" class="bolds2"> 0000</span> <br>
+          <span>Contest ID - </span><span id="cid2" class="bolds2"> 0000</span> <br>
+        </div>
+        <br>
+        <button id="indC2" class="search">Contest 0000</button>
+     
+
+      <div class="dets3">
+        <br>
+        <span>Contest Name - </span><span id="cname3" class="bolds3"> 0000</span> <br>
+        <span>Contest Duration - </span><span id="cdura3" class="bolds3"> 0000</span> <br>
+        <span>Contest Difficultry - </span><span id="cdiff3" class="bolds3"> 0000</span> <br>
+        <span>Contest ID - </span><span id="cid3" class="bolds3"> 0000</span> <br>
+      </div>
+      <br>
+      <button id="indC3" class="search">Contest 0000</button>
+    
+   
+
+    <div class="dets4">
+      <br>
+      <span>Contest Name - </span><span id="cname4" class="bolds4"> 0000</span> <br>
+      <span>Contest Duration - </span><span id="cdura4" class="bolds4"> 0000</span> <br>
+      <span>Contest Difficultry - </span><span id="cdiff4" class="bolds4"> 0000</span> <br>
+      <span>Contest ID - </span><span id="cid4" class="bolds4"> 0000</span> <br>
+    </div>
+    <br>
+    <button id="indC4" class="search">Contest 0000</button>
+ 
+
+
+
+
+  <div class="dets5">
+    <br>
+    <span>Contest Name - </span><span id="cname5" class="bolds5"> 0000</span> <br>
+    <span>Contest Duration - </span><span id="cdura5" class="bolds5"> 0000</span> <br>
+    <span>Contest Difficultry - </span><span id="cdiff5" class="bolds5"> 0000</span> <br>
+    <span>Contest ID - </span><span id="cid5" class="bolds5"> 0000</span> <br>
+  </div>
+  <br>
+  <button id="indC5" class="search">Contest 0000</button>
+
+
+  <br> <br> <br>
+  <button id="show" class="search" onclick="show()">SHOW</button> <br>
+  <button id="left" class="search" onclick="backward()">Previous</button>
+  <button id="right" class="search" onclick="forward()">Next</button>
+  <br>
+
+</div>
+ 
+
+     
+      <!-- //   $("#search").click(() => {
+      //   $.getJSON(
+      //     "https://codeforces.com/api/user.info?handles=" + $("#input").val(),
+      //     (data) => {
+           
+      //       $("#img").attr("src", data.result[0].titlePhoto);
+      //       $("#name").html(data.result[0].firstName);
+            
+      //       $("#City").html( data.result[0].city);
+      //       $("#organisation").html(data.result[0].organization);
+      //       $("#country").html(data.result[0].country);
+      //       $("#rating").html(data.result[0].rating);
+      //       $("#rank").html(data.result[0].rank);
+            
+            
+      //     }
+      //   );
+      // }); -->
+      <script>
+     
+      async function getDETAILS() {
+          
+           
+            var username = document.getElementById('input').value;
+            const api = `https://codeforces.com/api/user.info?handles= ${username}`
+            const response = await fetch(api);
+            const data = await response.json();
+            console.log(response.status);
+            const varstat=response.status;
+            var elem=document.getElementById('profile');
+            if(response.status != 200)
+            {
+            console.log(response.status)  
+            elem.classList.add("none");
+            document.getElementById('error').innerHTML="Invalid username";
+            }
+            if((data.result[0].firstName) && data.result[0].country)
+            {
+              document.getElementById('img').src = data.result[0].titlePhoto ;
+              document.getElementById('name').innerHTML = data.result[0].firstName + " "+ data.result[0].lastName;
+              document.getElementById('country').innerHTML = data.result[0].country;
+              document.getElementById('City').innerHTML = data.result[0].city;
+              document.getElementById('rating').innerHTML = data.result[0].rating;
+              document.getElementById('rank').innerHTML = data.result[0].rank;
+              document.getElementById('organisation').innerHTML = data.result[0].organization;
+              elem.classList.remove("none");
+              document.getElementById('error').innerHTML=" ";
+            }
+            else
+            {
+              elem.classList.add("none");
+              document.getElementById('error').innerHTML="Invalid username";
+            }
+
+          }
+        
+
+       
+
+        function myFunction() {
+         
+    var x = document.getElementById('profile');
+     x.style.display = "block";
+     
+
+  
+}
+
+var index = 0;
+      async function show(){
+        const contestAPI = 'https://codeforces.com/api/contest.list?gym=true';
+        const fetch2 = await fetch(contestAPI);
+        var data2 = await fetch2.json();
+        console.log(data2.result[index]);
+        document.getElementById('cname').innerHTML = data2.result[index].name;
+        document.getElementById('cdiff').innerHTML = data2.result[index].difficulty;
+        document.getElementById('cdura').innerHTML = (data2.result[index].durationSeconds / 60) + " minutes";
+        document.getElementById('cid').innerHTML = data2.result[index].id;
+        document.getElementById('indC').innerHTML = "Contest " + (index+1);
+
+        document.getElementById('cname2').innerHTML = data2.result[index+1].name;
+        document.getElementById('cdiff2').innerHTML = data2.result[index+1].difficulty;
+        document.getElementById('cdura2').innerHTML = (data2.result[index+1].durationSeconds / 60) + " minutes";
+        document.getElementById('cid2').innerHTML = data2.result[index+1].id;
+        document.getElementById('indC2').innerHTML = "Contest " + (index+2);
+
+        document.getElementById('cname3').innerHTML = data2.result[index+2].name;
+        document.getElementById('cdiff3').innerHTML = data2.result[index+2].difficulty;
+        document.getElementById('cdura3').innerHTML = (data2.result[index+2].durationSeconds / 60) + " minutes";
+        document.getElementById('cid3').innerHTML = data2.result[index+2].id;
+        document.getElementById('indC3').innerHTML = "Contest " + (index+3);
+
+
+        document.getElementById('cname4').innerHTML = data2.result[index+3].name;
+        document.getElementById('cdiff4').innerHTML = data2.result[index+3].difficulty;
+        document.getElementById('cdura4').innerHTML = (data2.result[index+3].durationSeconds / 60) + " minutes";
+        document.getElementById('cid4').innerHTML = data2.result[index+3].id;
+        document.getElementById('indC4').innerHTML = "Contest " + (index+4);
+
+
+        document.getElementById('cname5').innerHTML = data2.result[index+4].name;
+        document.getElementById('cdiff5').innerHTML = data2.result[index+4].difficulty;
+        document.getElementById('cdura5').innerHTML = (data2.result[index+4].durationSeconds / 60) + " minutes";
+        document.getElementById('cid5').innerHTML = data2.result[index+4].id;
+        document.getElementById('indC5').innerHTML = "Contest " + (index+5);
+      }
+
+      async function forward() {
+        index = index +5;
+        console.log(index);
+        show();
+      }
+      async function backward() {
+        index = index-5;
+        console.log(index);
+        show()
+      }
+
+
+
+ </script>
+
+<script>
+
+  const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+  mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+  })
+
+  mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+  })
+
+
+
+</script>
+
+
+
+     
+   
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

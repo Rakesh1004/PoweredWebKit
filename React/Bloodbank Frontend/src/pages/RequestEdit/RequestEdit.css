@@ -1,0 +1,60 @@
+.Receiver {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.receiverLeft {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    object-fit: cover;
+}
+
+.receiverLeft img {
+    width: 100%;
+    height: auto;
+}
+
+.receiverRight {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    color: #EE010D;
+    font-size: 25px;
+}
+
+.receiverRight h1 {
+    text-align: center;
+}
+.Form {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+label {
+    display: grid;
+    margin: 10px 0;
+}
+input {
+    margin: 10px 0;
+    width: 400px;
+    height: 30px;
+}
+.btn {
+    background-color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    color:white;
+    cursor: pointer;
+    transition: 400ms;
+    border:none;
+}
+.btn:hover{
+    background-color: red;
+
+}
