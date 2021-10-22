@@ -1,0 +1,132 @@
+.library-middle{
+
+    display:grid;
+    overflow-y: hidden;
+    width:100%;
+    height:91vh;
+    background-color: #000000;
+background-image: linear-gradient(360deg, #000000 0%, #434343 74%);
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+   grid-column-gap:60px;
+}
+
+.library-middle::-webkit-scrollbar {
+    display: none;
+  }
+
+.link-to-liked-songs{
+    height:40vh;
+    background: hsla(217, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
+    width:100%;
+    border-radius:5px;
+    margin:0 40%;
+    opacity:0.8;
+    position:relative;
+    top:15%;
+}
+.link-to-liked-songs h1,.link-to-playlists h1{
+    font-size:3rem;
+    font-weight: 900;
+    position:relative;
+    top:25%;
+    color:white;
+    text-align:center;
+    display: block;
+   margin:20%
+}
+.link-to-liked-songs:hover,.link-to-playlists:hover{
+    opacity:1;
+}
+.link-to-playlists{
+    height:40vh;
+    position:relative;
+    top:15%;
+    background: hsla(333, 100%, 53%, 1);
+
+    background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0F7B", endColorstr="#F89B29", GradientType=1 );
+    width:100%;
+    border-radius:5px;
+    margin:0 40%;
+    opacity:0.8;
+}
+
+.middle-library a{
+   text-decoration: none;
+}
+.library-title{
+    position:absolute;
+    top:5vh;
+   right:35%;
+    font-size:3rem;
+    color:white;
+
+}
+
+@media screen and (max-width:500px){
+    .library-middle{
+
+        overflow-x: hidden;
+        width:100%;
+        height:87vh;
+        background-color: #121212;
+    }
+    
+    .library-title{
+        position:absolute;
+        top:4vh;
+      left:10%;
+        font-size:2rem;
+        color:white;
+     width:80vw;
+    }
+    .link-to-liked-songs{
+        height:30vh;
+        width:80vw;
+        border-radius:25px;
+        margin:0 10%;
+        opacity:0.8;
+        position:relative;
+        top:20%;
+    }
+    .link-to-playlists{
+      
+        height:30vh;
+        width:80vw;
+        position:absolute;
+        top:50%;
+    left:-30%;
+      
+       
+        border-radius:25px;
+     
+        opacity:0.8;
+    }
+
+    .link-to-liked-songs h1,.link-to-playlists h1{
+        font-size:2rem;
+        font-weight: 900;
+        position:absolute;
+        top:10%;
+        color:white;
+        text-align:center;
+        display: block;
+      
+    }
+}
+
+

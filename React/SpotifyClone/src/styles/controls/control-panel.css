@@ -1,0 +1,26 @@
+.control-panel {
+  margin: 0.005vh 0;
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.timer {
+  margin-left:20%;
+  margin-right:20%;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(196, 196, 196);
+  
+}
+
+@media screen and (max-width:500px) {
+  .timer {
+    margin-left:30px;
+    margin-right:30px;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(196, 196, 196);
+  }
+    
+}

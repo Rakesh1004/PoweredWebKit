@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f90941;
+  color: white;
+  text-align: center;
+}
+.footer h1 {
+  margin-bottom: 5px;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.image {
+  text-align: center;
+}
